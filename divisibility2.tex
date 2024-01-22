@@ -1,5 +1,9 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xparse}
+\usepackage{physics}
 \title{ICTS-RRI Maths Circle, Saturday 27 January, 2024}
 \author{Disha Kuzhively}
 % \email{disha.jk@icts.res.in}
@@ -8,9 +12,9 @@
 \maketitle
 \emph{2:30 pm}
 \section*{Divisibility Relay}
-In this session, we will start with a game called 'Divisibility Relay'. The class will be split into two teams. Each team will pose questions for the opposing team to solve related to Divisibility and Fermat's Little Theorem. The objective is to solve the provided problems and ensure that your fellow team members have understood the solution. Team members must work together and discuss. The facilitator will then randomly choose a student from each team to present and solve the problem set for their team by the opposite team.
+In this session, we will start with a game called 'Divisibility Relay'. The class will be split into teams of 5-6 students. Each team will pose questions for the next team to solve related to Divisibility and Fermat's Little Theorem. The objective is to solve the provided problems and ensure that your fellow team members have understood the solution. Team members must work together and discuss. The facilitator will then randomly choose a student from each team to present and solve the problem set for their team by the opposite team.
 
-Your task will be to consider yourself a problem-setter and create exciting and challenging problems for your opposite team to solve.
+Your task will be to consider yourself a problem-setter and create exciting and challenging problems for your opposite teams to solve.
 
 \emph{3:45 pm}: Break for refreshments
 
@@ -21,9 +25,26 @@ Your task will be to consider yourself a problem-setter and create exciting and 
 % Let us now delve into various proving techniques. 
 
 \section*{More Number Theory}
-The numbers 12 and 35 are relatively prime, while 24 and 9 are not. For any natural number $n$, let us define $\phi(n)$ as the number of natural numbers less than $n$ and relatively prime to n. For example, the numbers 1, 3, 5, and 7 are less than 8 and relatively prime to 8 and therefore $\phi(8) = 4$.
 
-What is $\phi(7)?$ What is $\phi(p)$ when $p$ is a prime number?
+In this part of the session, I am holding a lottery with infinitely many tickets. Each ticket has a natural number written on it. I follow a rule to print the tickets: for any natural number $n$, the number of tickets with the divisors of $n$ written on them is exactly $n$. Your task is to prove that every natural number $m$ is written on at least one ticket.
+
+For example, the divisors of the number 4: ${1,2,4}$ appear on exactly 4 tickets. The divisor of 1 is just ${1}$, and therefore, it will appear on only 1 ticket. The divisors of 2 are ${1,2}$, since 1 is written only once, 2 can occur only one more time. This leaves 4, it has to occur twice to make divisors of 4 appear a total of 4 times. 
+
+Let $\mathcal{R}(n)$ be the number of times $n$ appears on a ticket. Calculate $\mathcal{R}(n)$ for $n = 5, 6, 7, 8, 9, 10$. Do you notice any patterns for $\mathcal{R}(n)$? For instance, can I find out $\mathcal{R}(2926)$ without calculating $\mathcal{R}(k)$ for $k$ smaller than 2926?
+
+Following are some more functions that can help us solve our main problem:
+
+\begin{itemize}
+  \item $\mathcal{T}(n) = $ number of all divisors of a natural number $n$.
+  \item $\mathcal{S}(n) = $ sum of all divisors of $n$.
+  \item $\mathcal{P}(n) = $ product of all divisors of $n$.
+\end{itemize}
+
+A function $f$ is multiplicative if, $f(mn) = f(m)f(n)$, when $m$ and $n$ are relatively prime. Verify whether $\mathcal{T}, \mathcal{S}, \mathcal{P}, \mathcal{R}$ are multiplicative.
+
+The numbers 12 and 35 are relatively prime, while 24 and 9 are not. For any natural number $n$, let us define $\phi(n)$ as the number of natural numbers less than $n$ and relatively prime to n. For example, the numbers 1, 3, 5, and 7 are less than 8 and relatively prime to 8 and therefore $\phi(8) = 4$. 
+
+What is $\phi(7)?$ What is $\phi(p)$ when $p$ is a prime number? 
 
 Consider the following table - 
 
@@ -59,10 +80,10 @@ Observe that every $k$th column is congruent to $k$ modulo 9. Construct a 'sieve
 What is $\phi(35)$? What is $\phi(pq)$ when $p$ and $q$ are prime numbers? Is $\phi$ multiplicative?
 
 What is $\phi(9)$? What is $\phi(p^2)$ when $p$ is a prime number?
-
 \newpage
 \section*{Explore Further}
 \begin{enumerate}
+    \item Is $5^{560} \equiv 1 \pmod{561}$? Can we find more composite numbers that satisfy Fermat's Little Theorem that $a^{p-1} \equiv 1 \pmod{p}$ when p is a prime number and a and p are coprime?
     \item Is the sum of cubes of integers subtracted from the cube of sum of those integers divisible by 3?
     \item What about the sum of the fifth and seventh power of integers subtracted from the fifth and seventh power of the sum of those integers, are the divisible by 5 and 7 respectively?
     \item Consider the Fibonacci series $a_n$, what the greatest common divisor of $a_{49}$ and $a_{50}$?

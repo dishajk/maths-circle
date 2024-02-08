@@ -3,5 +3,6 @@
     \def\factor{1/cos(72)}
     \def\infactor{1/cos(36)}
 \node [name=s, shape=star, star points=5, star point height=\radius*(\factor-\infactor), minimum size=2*\radius*\factor, draw,very thick] at (0,0) {};
-\filldraw[fill=gray!50,very thick, draw=black] (s.inner point 2) -- (s.inner point 4) -- (s.outer point 5) -- (s.outer point 2) -- cycle;
+\filldraw[fill=gray!50,very thick, draw=black] (s.inner point 2) -- (s.inner point 4) -- (s.outer point 5) -- (s.outer point 2) -- cycle; 
+\draw[dashed] (s.inner point 2) -- (s.inner point 3) -- (s.inner point 4);
 \end{tikzpicture}

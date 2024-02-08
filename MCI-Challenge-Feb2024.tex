@@ -1,6 +1,8 @@
 \documentclass[a4paper,12pt]{article}
-\usepackage[margin=3cm]{geometry}
+\usepackage[left=3cm,right=3cm,top=0cm]{geometry}
 \usepackage{tikz}
+\usepackage{wrapfig}
+
 \usetikzlibrary{shapes.geometric}
 
 \title{Monthly Maths Circle India Challenge}
@@ -10,19 +12,23 @@
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item[Problem 1.] A pentagram is a regular five-pointed star formed by connecting alternate vertices of a pentagon to create the points of the star. Show that the area of the shaded region of the regular pentagonal star in the picture below is exactly half of the total area of the star.
+    \item[Problem 1.] Anita and Bindu collaborated to create a festive cake arrangement. Anita contributed four cakes, each an isosceles triangle, while Bindu baked a single large cake shaped like a parallelogram. When they assembled the cakes at the party, a delightful surprise awaited them - the arrangement formed a regular five-pointed star, as in the picture below.
     \begin{figure}[h]
         \centering
-        \include{pentagram}
+        \include{pentagram}                
     \end{figure}
-    \item[Problem 2.] Construct a square on a square grid with an area five times that of a single square on the grid using only a straight edge and a pen or pencil.
+
+    A regular pentagonal star is created by connecting alternate vertices of a pentagon.
+
+    Now comes the time to split the cost. Anita claims that the total area of her four triangular cakes equals Bindu's single parallelogram cake. Bindu argues that the combined area of her cakes might be larger. Can you help them split the cost?
+
+    % A pentagram is a regular five-pointed star formed by connecting alternate vertices of a pentagon to create the points of the star. Show that the area of the shaded region of the regular pentagonal star in the picture below is exactly half of the total area of the star.
+    
+    \item[Problem 2.] A group of friends decided to buy plots together
+    Construct a square on a square grid with an area five times that of a single square on the grid using only a straight edge and a pen or pencil.
     \begin{figure}[h]
         \centering
-        \begin{tikzpicture}
-        \draw[gray] (-1.5,-1.5) grid (2.5,2.5);
-        \draw[black,thick] (0,0) grid (1,1);
-        \draw[->] (0.5,0.5) -- (3,1.5) node[above right] {single square on the grid};
-        \end{tikzpicture}
+        \include{squaregrid}
     \end{figure}
 \end{enumerate}
 

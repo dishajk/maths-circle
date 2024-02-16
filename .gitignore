@@ -1,6 +1,7 @@
 *.aux
 *.log
 *.synctex.gz
+*.out
 
 monthly_challenge_logo.png
 

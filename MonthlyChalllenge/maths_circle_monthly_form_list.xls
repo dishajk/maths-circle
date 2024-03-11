@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <table>
+    <thead><tr><th>Serial number</th><th></th><th></th><th></th><th>Upload answers</th><th></th></tr></thead>    <tbody> <tr class="odd"><td>6</td><td>Aman Kumar</td><td>Male</td><td>kumaramanphy@gmail.com</td><td>Aman_Monthly_Maths_Circle_India_Challenge.pdf</td><td>Linkedin</td> </tr>
+ <tr class="even"><td>5</td><td>Neeraja Mohan Krishnan</td><td>Female</td><td>neeraja.krishnan@gmail.com</td><td>ICTS-MCI-feb24-nmk-solutions.pdf</td><td>Through a tweet yesterday </td> </tr>
+ <tr class="odd"><td>4</td><td>Ahona Mukherjee </td><td>Female</td><td>ahona.mukherjee@students.iiserpune.ac.in</td><td>MCI_FEB.pdf</td><td>Yesterday through Facebook </td> </tr>
+ <tr class="even"><td>3</td><td>Akash Sarkar</td><td>Male</td><td>akash.sarkar@icts.res.in</td><td>India challenge.pdf</td><td>LinkedIn</td> </tr>
+ <tr class="odd"><td>2</td><td>Disha</td><td>F</td><td>disha.jk@icts.res.in</td><td>milky.pdf</td><td> </td> </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

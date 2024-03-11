@@ -1,0 +1,37 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=2.5cm,right=2.5cm,top=0cm]{geometry}
+\usepackage{tikz}
+
+\usetikzlibrary{shapes.geometric}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    urlbordercolor=white
+    }
+\usepackage[none]{hyphenat}
+\title{Monthly Maths Circle India Challenge}
+% \author{Disha Kuzhively}
+% \email{disha.jk@icts.res.in}
+\date{Solutions\\February 2024}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{enumerate}
+    \item[Solution 1.] We can divide Bindu's trapezium into four triangles. The triangles $B_1$ and $B_2$, which form two of the arms of the star, are each congruent to Anita's triangles $A_1$, $A_2$, and $A_3$. Triangle $B_3$ is congruent to $B_2$, and triangle $B_4$ is congruent to $A_4$.
+
+    \begin{figure}[h]
+        \centering
+        \include{pentagram_annotated}                
+    \end{figure}
+
+    The total area of Anita's four triangular cakes is indeed equal to the area of the single large trapezium cake baked by Bindu. Therefore, the cost should be split equally between the two.
+
+    \textit{The best solution to this problem was sent to us by Ahona Mukherjee}
+    
+    \item[Solution 2.] We can construct a square of area 5 by constructing $\sqrt{5}$. On the square grid, this would be the hypotenuse of the right triangle with sides of lengths 1 and 2. See the figure below.
+    \begin{figure}[h]
+        \centering
+        \include{squaregrid_annotated}
+    \end{figure}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    \def\radius{1cm}
+    \def\factor{1/cos(72)}
+    \def\infactor{1/cos(36)}
+\node [name=s, shape=star, star points=5, star point height=\radius*(\factor-\infactor), minimum size=2*\radius*\factor, draw,very thick] at (0,0) {};
+\filldraw[fill=gray!50,very thick, draw=black] (s.inner point 2) -- (s.inner point 4) -- (s.outer point 5) -- (s.outer point 2) -- cycle; 
+\draw[dashed] (s.inner point 2) -- (s.inner point 3) -- (s.inner point 4);
+\draw[blue] (s.inner point 1) -- (s.inner point 2) -- (s.inner point 5) -- (s.inner point 4);
+\node[below, inner ysep=1cm] at (s.outer point 1) {$A_1$};
+\node[above right, inner ysep=1cm, inner xsep=0.6cm] at (s.outer point 3) {$A_2$};
+\node[above left, inner ysep=1cm, inner xsep=0.6cm] at (s.outer point 4) {$A_3$};
+\node[above, inner ysep=0.4cm] at (s.inner point 3) {$A_4$};
+\node[below right, inner ysep=0.2cm, inner xsep=1cm] at (s.outer point 2) {$B_1$};
+\node[below left, inner ysep=0.2cm, inner xsep=1cm] at (s.outer point 5) {$B_2$};
+\node[below left, inner ysep=0.6cm, inner xsep=0.2cm] at (s.inner point 5) {$B_3$};
+\node[below right, inner ysep=0.2cm, inner xsep=0.1cm] at (s.inner point 1) {$B_4$};
+\end{tikzpicture}

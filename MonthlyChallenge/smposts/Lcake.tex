@@ -1,0 +1,10 @@
+
+\documentclass[border=1cm]{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw[black,thick] (0,0) -- (4,0) -- (4,2) --  (2,2) -- (2,4) -- (0,4) -- cycle;
+    \draw[dashed] (4,2) -- (4,4) -- (2,4);
+    \draw[white] (0,3)  -- (3,0) node [midway,sloped,above,black] {remaining cake};
+    \end{tikzpicture}
+\end{document}

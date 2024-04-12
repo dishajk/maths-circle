@@ -1,0 +1,56 @@
+\documentclass[a4paper,12pt]{article}
+% \usepackage[left=2.5cm,right=2.5cm,top=0cm]{geometry}
+\usepackage{tikz}
+
+\usetikzlibrary{shapes.geometric}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    urlbordercolor=white
+    }
+\usepackage[none]{hyphenat}
+\title{Monthly Maths Circle India Challenge}
+% \author{Disha Kuzhively}
+\author{www.icts.res.in/outreach/mci}
+\date{Due Date: 2 May 2024}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{enumerate}
+    \item[Problem 1.] Last month, Chaitra left the party early and took a quarter of the cake, leaving less for the other attendees. To make up for this, she plans to bring oranges for everyone when she returns from Nagpur. When she gets home, she wants to hold a small meetup for all her friends. Chaitra has invited Anita, Bindu, Diya, Ekta, Fatima, and Gunjan, but she is unsure whether everyone will show up. However, Anita promised that she would come, and she always keeps her promises. Chaitra plans to give away all the oranges to the people who come to her meetup, and she wants to give everyone the same number of oranges. What is the smallest number of oranges that Chaitra needs to get from Nagpur to ensure that everyone who attends her meetup receives an equal number of oranges?
+    \item[Problem 2.] Below is a picture of a rectangular piece of paper that was cut by
+    5 vertical lines and 4 horizontal lines into 30 smaller rectangles. The cutting was done in such a way that the perimeter of each of the resulting rectangles is a whole number. What can you say about the perimeter of the original rectangle? Was that also a whole number?
+    \begin{figure}[h]
+        \centering
+        \begin{tikzpicture}
+            \draw[thick] (0,0) rectangle (8,5);
+                \foreach \x in {3.72, 1.98, 5.63, 6.21, 2.34} {
+                    \draw (\x,0) --++(90:5);
+                }
+            \foreach \y in {2.15, 4.37, 0.82, 3.64} {
+                \draw (0,\y) --++(0:8);
+                }
+        \end{tikzpicture}
+    \end{figure}
+\end{enumerate}
+\end{document}
+
+\newpage
+\thispagestyle{empty}
+\centering
+\begin{minipage}{0.8\textwidth}
+    \vspace{3cm}
+    Monthly Maths Circle India Challenge is a maths competition open to everyone who likes to solve mathematical problems. Every second Friday of the month, we will upload a new problem on our website. You will have three weeks to solve it and submit your answer before the deadline specified on the challenge sheet. Anyone can join, regardless of their age. We seek creative solutions that show a good understanding of various mathematical concepts. Please avoid using computer programs or excessively lengthy calculations. We will evaluate your submission based on its completeness, accuracy, and presentation quality. Remember that this contest aims to stimulate mathematical creativity; our graders' decisions are final.
+\end{minipage}
+\centering
+\begin{minipage}{0.8\textwidth}
+    \vspace{3cm}
+Check \url{https://www.icts.res.in/outreach/mci} for more information
+\end{minipage}
+\begin{minipage}{0.8\textwidth}
+    \vspace{3cm}
+    \centering
+    \includegraphics[scale=0.15]{mci-monthly}
+
+    Scan to submit your entry.
+\end{minipage}

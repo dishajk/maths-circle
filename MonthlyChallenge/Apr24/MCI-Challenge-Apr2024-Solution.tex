@@ -1,0 +1,39 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=2.5cm,right=2.5cm,top=0cm]{geometry}
+\usepackage{tikz}
+
+\usetikzlibrary{shapes.geometric}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    urlbordercolor=white
+    }
+\usepackage[none]{hyphenat}
+\title{Monthly Maths Circle India Challenge}
+% \author{Disha Kuzhively}
+% \email{disha.jk@icts.res.in}
+\date{Solutions\\April 2024}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{enumerate}
+    \item[Solution 1.] Chaitra wants to give everyone the same number of oranges, and she needs to ensure that the number of oranges she brings is divisible by the number of attendees. The number of attendees can be any number between 1 to 6. We are now looking for the smallest number divisible by 1, 2, 3, 4, 5, and 6 or the least common multiple of 1, 2, 3, 4, 5, and 6. The answer is 60.
+
+
+    \item[Solution 2.] Below is a picture of a rectangular piece of paper that was cut by
+    5 vertical lines and 4 horizontal lines into 30 smaller rectangles. The cutting was done in such a way that the perimeter of each of the resulting rectangles is a whole number. What can you say about the perimeter of the original rectangle? Was that also a whole number?
+    \begin{figure}[h]
+        \centering
+        \begin{tikzpicture}
+            \draw[thick] (0,0) rectangle (8,5);
+                \foreach \x in {3.72, 1.98, 5.63, 6.21, 2.34} {
+                    \draw (\x,0) --++(90:5);
+                }
+            \foreach \y in {2.15, 4.37, 0.82, 3.64} {
+                \draw (0,\y) --++(0:8);
+                }
+            \draw
+        \end{tikzpicture}
+    \end{figure}
+\end{enumerate}
+\end{document}

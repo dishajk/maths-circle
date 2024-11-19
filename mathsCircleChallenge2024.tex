@@ -1,0 +1,67 @@
+\documentclass[12pt]{exam}
+\usepackage[a4paper,
+            left=1in,
+            right=1in,
+            top=1in,
+            bottom=1in,
+            footskip=.25in]{geometry}
+\usepackage{tikz}      
+\date{\today}
+\renewcommand{\thequestion}{\textbf{Problem \arabic{question}}}
+
+\begin{document}
+\title{Maths Circle Challenge}
+\author{ICTS-RRI Maths Circle}
+\maketitle
+\thispagestyle{empty}
+\section*{Dividing a Field}
+
+\begin{questions}
+\question A farmer's field is irregularly shaped, as shown in the figure. The terrain is flat and the boundary lines are all in the North-South or East-West direction. The farmer has two sons and wants to divide the land into two pieces of land with equal area. He has before him a map of the land and an old school geometry box. The box has a compass and a ruler, whose markings are faded and unreadable. Can you help the farmer divide the land with the instruments he has?
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[scale=0.7]
+        \draw[thick] (0,0) -- (5,0) -- (5,5) -- (8,5) -- (8,10) -- (0,10) -- cycle;
+        \draw[thick,->] (0,11) --+(0,1) node[left] {$N$};
+        \draw[thick,->] (9,11) --+(1,0) node[below] {$E$};
+    \end{tikzpicture}
+    \caption{Figure shows an irregular piece of land owned by the Farmer. The problem is to divide the land into two pieces of equal area using only a straight edge and compass.}
+\end{figure}
+
+\question Prove that for any integer $n$, $n^3+11n$ is a multiple of 6.
+\question A couple (let's call them Sharmila and Prakash) invite five couples over for dinner. When they meet, there are introductions and some of the people shake hands. Of course, one does not shakes one's own hand and that of his/her spouse. Sharmila notices that of the other people (excluding herself) in the gathering, no two people shake the same number of hands. How many hands does Prakash shake?
+
+\question Let us make the following definition. We call any finite sequence of English letters "a word" (whether or not it can be found in a dictionary). For example, we can form six words using the letters A, B, and C each exactly once: ABC, ACB, BAC, BCA, CAB, and CBA. In the following calculate the number of different words that can be obtained by rearranging the letters of the word.
+\begin{parts}
+    \part MESOPOTAMIA
+    \part SCRAMBLE
+    \part JUXTAPOSITION
+    \part VIOLIN
+    \part MISSISSIPPI
+\end{parts}
+
+\question Mr. and Mrs. Sharma have four children - three boys and a girl - who each likes one of the colours - blue, green, red, yellow - and one of the letters - P, Q, R, S. The oldest child likes the letter Q. The youngest child likes green. Aditya likes the letter S. Bhanumati, the girl, has an older brother who likes R. The one who likes blue isn't the oldest. The one who likes red likes the letter P. Chetan likes yellow. Based on the above facts, Deepak is the
+\begin{choices}
+    \choice youngest child
+    \choice third child
+    \choice second child
+    \choice oldest child
+\end{choices}
+
+\question When we throw a die, the numbers one to six are all equally likely. When we throw a pair of dice, the "outcome" of the throw is usually defined as the sum of the two numbers appearing on top of the dice. Let us change the rules and define the "outcome" as the product of the two numbers.
+
+How many distinct outcomes are there? What is the chance (probability) that the outcome is
+\begin{parts}
+    \part a prime number
+    \part a perfect square
+    \part a triangular number
+    \part an even number
+    \part an odd number
+    \part both triangular and square
+\end{parts}
+\question $10$ cables were laid across the Zambezi river in a remote part of Africa. After laying the cables, the engineer realised that he had forgotten to label them, so he didn't know which of the $10$ ends on one bank corresponded to the $10$ ends on the other. He had at his disposal a multimeter to test continuity, some copper wire to connect the ends on each bank and a boat to cross the river with.  As you may know, the Zambezi river has herds of hippos and these  animals can be dangerous to crossing boats. It would be wise to minimise the number of river crossings.
+
+How would the engineer figure out the corresponding cables with a minimum number of crossings?
+\end{questions}
+\end{document}
+

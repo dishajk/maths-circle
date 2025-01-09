@@ -1,0 +1,15 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage[margin=0in]{geometry}
+\usepackage{graphicx}
+\usepackage{pgffor}
+\usepackage{ifthen}
+\begin{document}
+\setlength{\parindent}{0pt}
+\setlength{\fboxsep}{0pt}  % Space between image and border
+\setlength{\fboxrule}{1pt} % Border thickness
+\foreach \i in {1, 2, 3, ..., 14} {
+\fbox{\includegraphics{\i.png}}\ifthenelse{\isodd{\i}}{}{\newline}
+}
+\fbox{\includegraphics{observer.png}}
+\fbox{\includegraphics{observer.png}}
+\end{document}

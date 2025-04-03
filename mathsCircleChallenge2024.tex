@@ -136,7 +136,9 @@
 \end{solution}
 \question A couple (let's call them Sharmila and Prakash) invite five couples over for dinner. When they meet, there are introductions and some of the people shake hands. Of course, one does not shakes one's own hand and that of his/her spouse. Sharmila notices that of the other people (excluding herself) in the gathering, no two people shake the same number of hands. How many hands does Prakash shake?
 \begin{solution}
-    There are 11 people, each engaging in a handshake with some or none of the others. Each person shakes a number of hands from the set \(\{0,1,2,3,4,5,6,7,8,9,10\}\). Let $P_k$ be the person who shook $k$ hands. $P_{10}$ shook everyone's hands except their spouse's. $P_0$ is $P_{10}$ are a couple. $P_1$ shakes hands only with $P_10$. $P_{9}$ has to shake 8 more hands other than that of $P_0,\ P_1,\ P_{10},$ their spouse, or self. The only way to ensure distinct handshakes is for $P_9$ to be the spouse of $P_1$.
+    There are 11 people, each engaging in a handshake with some or none of the others. Each person shakes a number of hands from the set \(\{0,1,2,3,4,5,6,7,8,9,10\}\). Let $P_k$ be the person who shook $k$ hands. 
+    
+    $P_{10}$ shook everyone's hands except their spouse's and $P_{0}$. This accounts for 13 people ($P_{10}$, thier spouse, the 10 people they shake hands with, and $P_{0}$). $P_0$ and $P_{10}$ are a couple. $P_1$ shakes hands only with $P_{10}$. $P_{9}$ has to shake 8 more hands other than that of $P_0,\ P_1,\ P_{10},$ their spouse, or self. The only way to ensure distinct handshakes is for $P_9$ to be the spouse of $P_1$.
     By extending this logic, one can see that $P_{10-n}$ and $P_n$ are a couple for \(n\in\{0,1,2,3,4\}\) and $P_5$ is unpaired. 
 
     This means that $P_5$ and another person both shook the same number of hands. 
@@ -219,14 +221,9 @@ How many distinct outcomes are there? What is the chance (probability) that the 
     \end{solution}
     \part a triangular number
     \begin{solution}
-    Triangular numbers are of the form \(\flatfrac{n(n+1)}{2}\). Favourable outcomes are pairs of the form \((n,\flatfrac{(n+1)}{2})\) or \((\flatfrac{n}{2},n+1)\)
-    For \(n=1\), we have \((1,1)\).
-    For \(n=2\), we have \(\{(1,3),(3,1)\}\).
-    For \(n=3\), we have \(\{(3,2),(2,3)\}\).
-    For \(n=4\), we have \(\{(2,5),(5,2)\}\).
-    For \(n=5\), we have \(\{(5,3),(3,5)\}\).
-
-    P \(=\flatfrac{9}{36} = \flatfrac{1}{4}\).
+    Triangular numbers are of the form \(\flatfrac{n(n+1)}{2}\). Favourable outcomes are \(\{(1,1), (1,3),(3,1), (3,2),(2,3), (2,5),(5,2), (5,3),(3,5), (6,6)\}\).
+    
+    P \(=\flatfrac{10}{36} = \flatfrac{5}{18}\).
 \end{solution}
     \part an even number
     \begin{solution}
@@ -241,9 +238,9 @@ How many distinct outcomes are there? What is the chance (probability) that the 
     \end{solution}
     \part both triangular and square
     \begin{solution}
-        The only triangular number that is also a square is 1. \(\{(1,1)\}\) is the only favourable outcome.
+        The only triangular number that is also a square is 1. \(\{(1,1), (6,6)\}\) is the favourable outcome.
         
-        P \(=\flatfrac{1}{36}\).
+        P \(=\flatfrac{2}{36} = \flatfrac{1}{18}\).
     \end{solution}
 \end{parts}
 \question $10$ cables were laid across the Zambezi river in a remote part of Africa. After laying the cables, the engineer realised that he had forgotten to label them, so he didn't know which of the $10$ ends on one bank corresponded to the $10$ ends on the other. He had at his disposal a multimeter to test continuity, some copper wire to connect the ends on each bank and a boat to cross the river with.  As you may know, the Zambezi river has herds of hippos and these  animals can be dangerous to crossing boats. It would be wise to minimise the number of river crossings.

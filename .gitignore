@@ -4,6 +4,7 @@
 *.out
 .DS_Store
 *.zip
+*.bib
 
 monthly_challenge_logo.png
 mci-monthly.png
